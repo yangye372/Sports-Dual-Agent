@@ -2,14 +2,6 @@
 
 基于知识图谱和双智能体调控的智能教学系统，实现结构化的教学路径生成与自适应学习调控。
 
-## ✨ 特性
-
-- 🗺️ **知识图谱构建**：从教学材料中自动抽取结构化知识，构建多层次的语义网络
-- 🔗 **任务链生成**：基于拓扑排序生成G-P-F（Guidance-Presentation-Feedback）三阶段教学任务链
-- 🤖 **双智能体调控**：Guiding Agent和Structural Agent协同工作，实现自适应学习路径调整
-- 📊 **图增强RAG**：结合知识图谱检索和向量检索，生成高质量教学内容
-- 📝 **证据化日志**：全程记录学习路径和调控决策，支持可复现实验
-
 ## 🏗️ 系统架构
 
 系统采用模块化设计，包含5个核心模块：
@@ -242,31 +234,3 @@ results = sim.simulate_session(
 )
 ```
 
-## 🛠️ 开发
-
-### 添加新的节点类型
-
-1. 在 `config.py` 的 `NODE_TYPES` 中添加
-2. 更新 `kg_builder.py` 中的抽取逻辑
-
-### 自定义智能体策略
-
-编辑 `dual_agent_controller.py` 中的prompt和逻辑。
-
-## 📝 许可证
-
-本项目采用 MIT 许可证。
-
-## 🙏 致谢
-
-- 使用 [Qwen](https://github.com/QwenLM/Qwen) 作为大语言模型
-- 使用 [Neo4j](https://neo4j.com/) 作为图数据库
-- 使用 [LangChain](https://github.com/langchain-ai/langchain) 进行文本处理
-
-## 📧 联系方式
-
-如有问题或建议，请提交 Issue 或 Pull Request。
-
----
-
-⭐ 如果这个项目对你有帮助，请给个Star！
